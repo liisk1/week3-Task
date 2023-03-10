@@ -11,6 +11,49 @@ html {
     color: #151515;
 }
 
+.modal {
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: #a8a4a4a2;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.modal-content {
+    background-color: rgb(235, 218, 199);
+    margin: 5% auto;
+    padding: 5rem;
+    width: 600px;
+    height: 600px;
+    animation: zoom-in 1s;
+    border-radius: 5px;
+}
+
+@keyframes zoom-in {
+    0% {transform: scale(0);}
+    100% {transform: scale(1);}
+}
+
+.closeBtn {
+    float: right;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.movie-poster-modal {
+    width: 300px;
+    border-radius: 5px;
+}
+
+.modal-content h1 {
+    color: rgb(38, 156, 235);
+    font-size: 1.7rem;
+}
+
 .movie-card {
     margin-top: 5rem;
     height: 800px;
@@ -35,6 +78,7 @@ html {
     margin-top: 2rem;
     height: 500px;
     border-radius: 20px;
+    cursor: pointer;
     /*add for animation*/
     opacity: 0;
     animation: fade-in 5s ease-in-out forwards;
